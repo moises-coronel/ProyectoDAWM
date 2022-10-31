@@ -2,49 +2,203 @@
 <html lang="es-ES">
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="style.css">
+		<!-- Etiqueta viewport meta -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="/style/style.css">
+    <script src="https://kit.fontawesome.com/29c9a2af37.js" crossorigin="anonymous"></script>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
     <title>CV </title>
+    <script>
+      $(document).ready(function(){
+      var altura = $('.menu').offset().top;
+      
+      $(window).on('scroll', function(){
+        if ( $(window).scrollTop() > altura ){
+          $('.menu').addClass('menu-fixed');
+        
+        } else {
+          $('.menu').removeClass('menu-fixed');
+        }
+      });
     
+    });
+    </script>
   </head>
+ 
   <body>
+    
     <header> 
-      <div class="img">
-         <h1>Título de portafolio</h1>
-         <br>
-         <h3>subtitulo</h3>
-         <div class="dropdown"><li class=" even">
-          <div class="dropdown-child"><li class=" even">
-            <a href="#">Inicio</a>
-              <a href="#">Sobre mi</a>
-              <a href="#">Habilidades</a>
-              <a href="#">contacto</a>
-          </div>
-        </div>
-       </div>
-    </header>
-    <section>
-        <h2 id="subt" name="subt">Sobre mi</h2>
-        <div style="display: grid; grid-template-columns: repeat(2, 1fr); grid-gap: 10px; grid-auto-rows: minmax(100px, auto);">
-            <div class="one">
-              <p id="contenido" name="contenido">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis quos molestias distinctio dolorum, quia esse ducimus eos provident tempora dolores iure adipisci nesciunt ullam, molestiae nisi sunt voluptates odit corporis?
-              </p>
-              </div>
-            <div class="two">
-                <img src="https://picsum.photos/200/300" alt="">
+      <section id="portada-section" class="portada_section">
+        
 
-            </div>
+        
+      <video id="videoBG" poster="/rsc/fondo.png" autoplay muted loop>
+          <source src="/rsc/fondo.mp4" type="video/mp4">
+        
+      </video>
+      <div class="portada" id="ini">
+        <div class="contenedor">
+          <nav class="menu">
+            <ul>
+              <li><a class="le" href="#portada-section">Inicio</a></li>
+              <li><a class="le" href="#sec-sobremi">Sobre mi</a></li>
+              <li><a class="le" href="#formacion">Formacion</a></li>
+              <li><a class="le" href="#conocimiento">Conocimientos</a></li>
+              <li><a class="le" href="#sec-cont">Contactos</a></li>
+            </ul>
+          </nav>
+          
+          </div>
+         <h1>Mi portafolio</h1>
+        
+         <h3>Moisés Coronel</h3>
+         
         </div>
+      </div>
     </section>
-    <section>
-        <h2 id="subt" name="subt">Habilidades</h2>
-        <p id="contenido" name="contenido"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, illo. Doloremque cupiditate, est aliquam quaerat quo veniam odio ea, quod corporis sequi fuga deserunt natus voluptates unde alias quos facere.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel eos pariatur, voluptas aliquid, quibusdam aperiam amet dolorem vitae delectus deleniti veritatis, iste perspiciatis inventore repellendus harum ipsum. Harum, quaerat enim.
-      </p>
+    </header>
+    <section id="sec-sobremi" class="sec-sobremi">
+      <article class="article">
+				<h2 class="article-title">
+				  Sobre mí
+				  </h2>
+          
+          <hr class="small">
+				<div class="article-body">
+				  
+          <div class="article-content">
+          <figure class="article-image">
+            <img src="/rsc/yo.png" alt="">
+          </figure>
+          <div class="p_cont">
+				  <p class="">
+					Hola!. Te contaré un poco sobre mí, soy una persona muy paciente, risueña y muy respetuosa, cuando algo me interesa busca leer toda información de ello. Estudio Ingnieria en Ciencias Computacionales en la Espol. <br> <br>
+          Aunque Prefiero la programación en lenguaje de alto nivel, no tengo porblema con adentrarme con aprender lenguajes nuevos si se amerita el caso. Me gusta el cine, la naturalez y la ciencia, cuando tengo tiempo libre me monto en mi bicileta y recorro la ciudad, me ayuda a despejar la mente en momentos de estres.
+          </p>
+        </div>
+        </div>
+				</div>
+			</article>
     </section>
-    <section>
-        <h2 id="subt" name="subt">Contacto</h2>
+    <section id="formacion" class="formacion">
+      <article class="article">
+        <div class="article-title">
+        <h2 id="subt" name="subt">Formación</h2>
+      </div>
+        <hr class="small">
+        <div class="article-body">
+        <table class="article-content">          
+          <tr class="t1">
+            <td>Educación Primaria:</td>
+            <td>“Nuestra Escuela” de Fe y Alegría</td>
+          </tr>
+        
+          <tr>        
+            <td>Educación Secundaria:</td>
+            <td>Colegio técnico particular "MONTEPIEDRA" TÍTULO OBTENIDO: Bachiller Técnico en Comercio y Administración 
+              ESPECIALIZACIÓN: Aplicaciones Informáticas</td>
+          </tr class="tr1">
+          <tr>
+            <td>Educación Superior:</td>
+            <td>Escuela Superior Politécnica del Litoral (actualmente estudiando)</td>
+       
+          </tr>
+        
+        </table>
+      </div>
+      </article>
     </section>
+    <section id="conocimiento" class="conocimiento">
+      <article class="article">
+        <h2 id="subt" name="subt">Conocimientos</h2>
+    
+        <hr class="small">
+        <div class="article-body" style="padding-left: 20%;" >
+      
+      
+        
+        <ul class="article-content" >
+          <li> Reparación de computadoras y mantenimiento básico</li>
+          <li>Inglés intermedio</li>
+          <li>Venta y atención al cliente</li>
+          <li>Ayudante en proyectos culinarios</li>
+          <li>Manejo de programas utilitarios de oficina (Word,Excel, PowerPoint)</li>
+          <li>Cuadre y cierre de caja.</li>
+          <li>Venta, facturación y atención al cliente</li>
+          <li>Programación en Java.</li>
+          <li>Programación en R.</li>
+          <li>Programación en Python.</li>
+          <li>Programación en SQL.</li>
+          <li>Conocimientos estadísticos básicos.</li>
+        </ul>
+      </div>
+    </article>
+
+    </section>
+    <section id="sec-cont" class="sec-cont">
+      <article class="article">
+        <div class="article-title">
+          <h2 id="subt" name="subt">Contacto</h2>
+      </div>
+      <hr class="small">
+        <div class="article-body">
+        
+        <div class="info">
+          Guayaquil, Provincia del Guayas, Ecuador
+          
+          <ul class="numero">
+            <li>
+              <a href="https://wa.me/593964089157">
+               <!--aqui va icono de telf--> 
+               <i class="fa-brands fa-whatsapp"></i>  <span dir="ltr">0964089157</span>
+              
+              </a>
+            </li>
+            <li>
+              
+              <a href="mailto:agustincoronelunda@gmail.com">
+                <i class="fa-sharp fa-solid fa-envelope"></i>
+                agustincoronelunda@gmail.com</a>
+              
+            </li>
+            <br>
+            <a href="https://github.com/moises-coronel/ProyectoDAWM">
+              <i class="fa-brands fa-square-github"></i>Ghithub, </a>
+            <a href="https://www.instagram.com/moimoicoronel/?hl=es"><i class="fa-brands fa-instagram"></i>Instagram</a>
+            
+
+          </ul>
+        </div>
+          <div class="f">
+          
+            
+          <form class="formulario">
+            
+            <p><input type="text" class="form-g" name="nombre" Placeholder="Nombre"></p>
+            
+            <p><input type="text" class="form-g" name="telefono" Placeholder="Teléfono"></p>
+            <p><input type="text" class="form-g" name="correo" Placeholder="Correo Electrónico"></p>
+            <textarea class="form-gta" name="mensaje" placeholder="Mensaje"></textarea>
+          </form>
+          <iframe id="mapa" class="mapa" data-src="https://maps-cdn.site123.com/include/globalMapDisplay.php?q=Guayaquil%2C+Provincia+del+Guayas%2C+Ecuador&amp;z=15&amp;l=es&amp;ilfc=1" style="pointer-events: none;" data-ll-status="loaded" src="https://maps-cdn.site123.com/include/globalMapDisplay.php?q=Guayaquil%2C+Provincia+del+Guayas%2C+Ecuador&amp;z=15&amp;l=es&amp;ilfc=1" frameborder="0"></iframe>
+
+       
+
+        </div>
+        </div>
+      </article>
+    </section>
+    
+    <footer>
+      <div>
+        Copyright © 2022 Todos los derechos reservados - <span class="">cv</span> 
+    </div>
+      <div>
+      Desarrollado por Moisés Coronel
+  </div>
+      
+    </footer>
     
     
   </body>
