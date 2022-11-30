@@ -181,13 +181,13 @@ function graficar(arr_nombres,arr_score,arr_time,arr_anio){
         datasets: [{
                 label: "Puntaje",
                 data: arr_score.map(Number),
-                backgroundColor: "rgba(235, 22, 22, .7)",
+                backgroundColor: "rgba(235, 22, 22, .8)",
                 
             },
             {
                 label: "Duración",
                 data: arr_time.map(Number),
-                backgroundColor: "rgba(235, 22, 22, .5)"
+                backgroundColor: "rgba(235, 22, 22, .4)"
             }
         ]
         },
