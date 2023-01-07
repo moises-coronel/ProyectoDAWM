@@ -1,9 +1,13 @@
+import { PortadaComponent } from './components/portada/portada.component';
+import { NavigationComponent } from './components/navigation/navigation.component';
+import { CharactersComponent } from './components/characters/characters.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { CharacterComponent } from './components/character/character.component';
 
 const routes: Routes = [
-  { path: "character", component: CharacterComponent }
+  {path: "characters", component: CharactersComponent },
+  {path: "navigation", component: NavigationComponent},
+  {path: "portada", component: PortadaComponent}
 ];
 
 @NgModule({
