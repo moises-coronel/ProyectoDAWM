@@ -1,0 +1,39 @@
+main {
+	background-image: url("../../../assets/Fondo.jpg");
+	background-size:     cover;                    
+    background-repeat:   no-repeat;
+    background-position: center center;
+	height: 100vh;
+	width: 100vw;
+}
+img {
+  
+    width:150px;
+    height: 150px;
+    margin:2px;
+    border-radius:150px;
+    box-shadow: 0 1px 3px rgb(0 0 0 / 12%), 0 1px 2px rgb(0 0 0 / 24%);
+  
+}
+section{
+    justify-content: center;
+   }
+  section{
+    display: flex;
+  }
+.article {
+  
+    background: white;
+    width: 65%;
+    color: #666;
+    margin: 10px;
+    box-shadow: 0 1px 3px rgb(0 0 0 / 12%), 0 1px 2px rgb(0 0 0 / 24%);
+    padding-bottom: 20px;
+  }
+  
+  .article-body{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+  }

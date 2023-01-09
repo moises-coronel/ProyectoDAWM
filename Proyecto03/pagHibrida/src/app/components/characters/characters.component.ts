@@ -11,11 +11,11 @@ export class CharactersComponent {
   constructor() {
 
     /* Leer desde el localStorage */
-    let rickymorty = JSON.parse(localStorage.getItem("pagHibrida")!);
-    console.log(rickymorty.results);
+    let rickymorty = JSON.parse(localStorage.getItem("rickymorty")!);
+    //console.log(rickymorty.results);
       
     if(rickymorty) {
-      this.characters = rickymorty.results as Character[];
+      this.characters = rickymorty as Character[];
       //console.log(Array.from(this.characters));
     }
     
